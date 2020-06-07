@@ -3,6 +3,11 @@ class Enemy {
 	float w = SOIL_SIZE;
 	float h = SOIL_SIZE;
 
+  Enemy(float x, float y){
+    this.x = x;
+    this.y = y;
+  }
+
 	void checkCollision(Player player){
 
 		if(isHit(x, y, w, h, player.x, player.y, player.w, player.h)){
@@ -12,11 +17,10 @@ class Enemy {
 		}
 	}
 
-	void display(){}
-	void update(){}
+	void display(){
+  }
+	void update(){
+    
+  }
 
-	Enemy(float x, float y){
-		this.x = x;
-		this.y = y;
-	}
 }
